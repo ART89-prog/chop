@@ -289,7 +289,6 @@ body.menu_open {
 header .mob_menu_btn {
     display: none;
     margin-right: 0px;
-    margin-left: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -305,7 +304,6 @@ header .close_btn img {
 header .mob_menu_btn {
     display: none;
     margin-right: 0px;
-    margin-left: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -378,7 +376,16 @@ header .menu .item a {
     transition: all .4s;
     white-space: nowrap;
 }
-
+.header_logo {
+    margin-top: 20px;
+    width: 103px;
+    height: 144px;
+    flex-shrink: 0;
+}
+.header_logo img {
+    width: 100%;
+    height: 100%;
+}
 header .menu .item a:hover {
     color: #EF1B1A;
 }
@@ -395,6 +402,7 @@ header .menu .item a:hover {
     line-height: 1;
     color: #FFFFFF;
     margin-bottom: 33px;
+    letter-spacing: 1.4px;
 }
 .header_title span {
     color: #EF1B1A;
@@ -407,6 +415,7 @@ header .menu .item a:hover {
     color: #FFFFFF;
     margin-bottom: 53px;
     max-width: 678px;
+    letter-spacing: 0.3px;
 }
 .header_text b {
     font-weight: 700;
@@ -475,17 +484,14 @@ h2 {
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
-    line-height: 1.4;
+    line-height: 1.15;
     color: #FFFFFF;
 }
 h2 span {
     color: #EF1B1A;
 }
 .about_info {
-    margin-left: 40%;
-}
-.about_title {
-    margin-bottom: 19px;
+    margin-left: 40.5%;
 }
 .about_subtitle {
     font-family: 'Inter';
@@ -493,7 +499,7 @@ h2 span {
     font-size: 20px;
     line-height: 1.6;
     color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .about_subtitle span {
     color: #EF1B1A;
@@ -515,7 +521,7 @@ h2 span {
     font-size: 18px;
     line-height: 1.7777;
     color: #FFFFFF;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .about_bottom p span {
     color: #EF1B1A;
@@ -616,11 +622,12 @@ h2 span {
 }
 .services .swiper-button-next {
     top: 60px;
+    right: 32px;
 }
 .services .swiper-button-prev {
     top: 60px;
     left: auto;
-    right: 62px;
+    right: 80px;
 }
 
 
@@ -704,6 +711,7 @@ h2 span {
     background: #000000;
     border: 1px solid #2B2B2B;
     border-radius: 40px;
+    padding: 30px 30px 35px 30px;
 }
 .technology_item-top {
     display: flex;
@@ -854,7 +862,6 @@ h2 span {
     border: 1px solid #2B2B2B;
     border-radius: 40px;
     padding: 50px 30px 26px;  
-    min-height: 527px; 
 }
 .callback .form_title {
     font-family: 'Inter';
@@ -934,16 +941,18 @@ h2 span {
 }
 
 
+.map {
+    background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
+}
 .map_wrap {
     position: relative;
     max-width: 100%;
     transform: translateZ(0);
-    width: 796px;
-    height: 507px;
-    border-radius: 8px;
+    width: 435px;
+    height: 477px;
+    border-radius: 40px;
     overflow: hidden;
 }
-
 #map {
     position: absolute;
     top: 0;
@@ -951,5 +960,44 @@ h2 span {
     width: 100%;
     height: 100%;
 }
-
+.map_box {
+    display: flex;
+    gap: 27px;
+}
+.map_items {
+    width: calc(100% - 435px - 27px);
+    padding: 50px 25px 35px;
+    background: #000000;
+    border: 1px solid #2B2B2B;
+    border-radius: 40px;
+}
+.map_item + .map_item {
+    margin-top: 20px;
+}
+.map_item-title {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.map_item-text {
+    padding-left: 29px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #FFFFFF;
+    position: relative;
+}
+.map_item-text:before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 23px;
+    top: -3px;
+    left: 0;
+    background: url(../images/marker.svg);
+}
 

@@ -1,56 +1,5 @@
 $(() => {
 
-	// Основной слайдер на главной
-	if ($('.first_section .swiper').length) {
-		new Swiper('.first_section .swiper', {
-			loop: true,
-			speed: 750,
-			slidesPerView: 1,
-			effect: 'fade',
-			fadeEffect: {
-				crossFade: true
-			},
-			watchSlidesVisibility: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			spaceBetween: 0,
-			slidesPerView: 1,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'fraction',
-				clickable: true
-			}
-		})
-	}
-
-
-	if ($('.advantages .swiper').length) {
-		new Swiper('.advantages .swiper', {
-			loop: true,
-			speed: 750,
-			slidesPerView: 1,
-			effect: 'fade',
-			fadeEffect: {
-			crossFade: true
-			},
-			watchSlidesVisibility: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			spaceBetween: 0,
-			slidesPerView: 1,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
-			}
-		})
-	}
-
-
-
 	const servicesSliders = [],
 	services = document.querySelectorAll('.services .swiper')
     services.forEach(function(el, i) {
@@ -66,15 +15,15 @@ $(() => {
             breakpoints: {
                 0: {
                     spaceBetween: 20,
-                    slidesPerView: 1
+                    slidesPerView: 1.3
                 },
                 610: {
                     spaceBetween: 20,
-                    slidesPerView: 1
+                    slidesPerView: 1.3
                 },
                 768: {
                     spaceBetween: 20,
-                    slidesPerView: 2
+                    slidesPerView: 2.3
                 },
                 1023: {
                     spaceBetween: 20,
@@ -122,26 +71,6 @@ $(() => {
 
 
 
-	$('#top .mob_menu_btn').click((e) => {
-		e.preventDefault()
-
-		$('#top .mob_menu_btn').addClass('active')
-		$('body').addClass('menu_open')
-		$('#top .menu').addClass('show')
-		$('.overlay').fadeIn(300)
-	})
-
-	$('#top .close_btn, #top .menu .item a, .overlay').click((e) => {
-		e.preventDefault()
-
-		$('#top .mob_menu_btn').removeClass('active')
-		$('body').removeClass('menu_open')
-		$('#top .menu').removeClass('show')
-		$('.overlay').fadeOut(300)
-	})
-
-
-
 	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
 
@@ -175,34 +104,6 @@ $(() => {
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 
-	// Аккордион
-	$('body').on('click', '.accordion .accordion_item .head', function (e) {
-		e.preventDefault()
-
-		const $item = $(this).closest('.accordion_item'),
-			$accordion = $(this).closest('.accordion')
-
-		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.data').slideUp(400)
-		} else {
-			$accordion.find('.accordion_item').removeClass('active')
-			$accordion.find('.data').slideUp(400)
-
-			$item.addClass('active').find('.data').slideDown(400)
-		}
-	})
-
-
-
-
-	$(window).scroll(function(){
-		if($(window).scrollTop()>180){
-			$('#top').fadeIn(400)
-		}else{
-			$('#top').fadeOut(300)
-		}
-	});
-	
 
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function (e) {
@@ -216,60 +117,6 @@ $(() => {
 			easing: "swing"
 		});
 	});
-
-
-
-	
-    var swiper = new Swiper(".about .swiper", {
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-    });
-
-
-		// Показать контент 
-		$(".link-more").click(function (e) {
-			e.preventDefault();
-			$(".works_item").removeClass("hide");
-			$(".link-more").addClass("active");
-		});
-  
-
-
-
-    var swiper = new Swiper(".slider__thumbs .swiper", {
-      spaceBetween: 20,
-	  slidesPerView: 8,
-      freeMode: true,
-      watchSlidesProgress: true,
-	  breakpoints: {
-		0: {
-			spaceBetween: 15,
-			slidesPerView: 2
-		},
-		767: {
-			spaceBetween: 15,
-			slidesPerView: 3
-		},
-		1023: {
-			spaceBetween: 15,
-			slidesPerView: 5
-		}
-	}
-    });
-    var swiper2 = new Swiper(".slider__images .swiper", {
-      spaceBetween: 0,
-	  slidesPerView: 1,
-	  navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	  grabCursor: true,
-      thumbs: {
-        swiper: swiper,
-      },
-    });
 
 
 

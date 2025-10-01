@@ -1,0 +1,17 @@
+@media (max-width: 479px) {
+
+    .contacts .btn,
+    .first_section .btn {
+        width: 100%;
+    }
+    .modal_slider-btn,
+    .advantages_wrap_link {
+        width: 100%;
+    }
+    .footer_copy {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+
+}

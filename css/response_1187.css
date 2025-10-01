@@ -1,0 +1,48 @@
+@media print, (max-width: 1187px) {
+
+    .first_section .cont {
+        flex-direction: column;
+    }
+    .first_section-wrap {
+        width: 100%;
+        margin-bottom: 52px;
+    }
+    .first_section .swiper-slide {
+        width: 100%;
+    }
+    .first_section .swiper {
+        width: 100%;
+    }
+    .first_section .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .advantages_wrap {
+        flex-direction: column;
+        padding: 40px 78px;
+        margin-top: 60px;
+        padding: 66px;
+    }
+    .advantages_wrap_text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .advantages_wrap_phone {
+        margin-bottom: 27px;
+    }
+    .map_wrap {
+        width: 620px;
+    }
+    .contacts_info {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        width: calc(100% - 650px);
+    }
+
+
+
+
+
+}

@@ -23,11 +23,11 @@ $(() => {
                 },
                 768: {
                     spaceBetween: 20,
-                    slidesPerView: 2.3
+                    slidesPerView: 2.5
                 },
                 1023: {
                     spaceBetween: 20,
-                    slidesPerView: 3.3
+                    slidesPerView: 2.5
                 }
             },
             pagination: {
@@ -111,7 +111,7 @@ $(() => {
 		let id = $(this).attr("href");
 
 		$("html, body").animate({
-			scrollTop: $(id).offset().top - 82
+			scrollTop: $(id).offset().top
 		}, {
 			duration: 400,
 			easing: "swing"

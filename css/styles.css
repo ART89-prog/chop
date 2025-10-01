@@ -186,7 +186,7 @@ button {
     overflow: hidden;
     flex-direction: column;
 
-    min-width: 360px;
+    min-width: 375px;
     min-height: 100%;
 
     background: var(--bg);
@@ -326,7 +326,6 @@ header .close_btn {
     width: 49px;
     height: 49px;
     background: #FFFFFF;
-    opacity: 0.3;
     border: 1px solid #FFB800;
     border-radius: 4px;
     display: none;
@@ -628,6 +627,9 @@ h2 span {
     top: 60px;
     left: auto;
     right: 80px;
+}
+.swiper {
+    overflow: visible !important;
 }
 
 
@@ -1001,3 +1003,103 @@ h2 span {
     background: url(../images/marker.svg);
 }
 
+
+
+
+
+.modal_callback form {
+    background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
+    border: 1px solid #2B2B2B;
+    border-radius: 40px;
+    padding: 50px 30px 26px;  
+}
+.modal_callback .form_title {
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+.modal_callback form .line {
+    display: flex;
+    gap: 12px;
+}
+.modal_callback form .line + .line {
+    margin-top: 15px;
+}
+.modal_callback form .line > * {
+    width: calc(100%/2 - 6px);
+}
+.modal_callback form .line .field {
+    width: 100%;
+}
+.modal_callback form .line .field input {
+    background: #000000;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    height: 100%;
+    padding: 18px;
+}
+.modal_callback form .line:nth-child(3),
+.modal_callback form .line:nth-child(4),
+.modal_callback form .line:nth-child(5) {
+    width: 100%;
+}
+.modal_callback form .line:nth-child(3) .field,
+.modal_callback form .line:nth-child(4) .field,
+.modal_callback form .line:nth-child(5) .field {
+    width: 100%;
+}
+.modal_callback form .line:nth-child(3) .field input,
+.modal_callback form .line:nth-child(4) .field input,
+.modal_callback form .line:nth-child(5) .field textarea {
+    width: 100%;
+}
+.modal_callback form .line .field textarea {
+     background: #000000;
+    border: 1px solid #282828;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    height: 95px;
+    padding: 18px; 
+    resize: none;  
+}
+.modal_callback form button {
+    display: block;
+    margin-left: auto;
+    padding: 19px 24px;
+    background: #EF1B1A;
+    border-radius: 12px;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    margin-top: 22px;  
+}
+
+.fancybox__content {
+    padding: 0;
+    border-radius: 40px;    
+    background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
+    border: 1px solid #2B2B2B;
+}
+.fancybox__content>.carousel__button.is-close {
+    top: 20px;
+    right: 20px;
+}
+.modal_callback {
+    display: none;
+}

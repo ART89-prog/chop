@@ -49,6 +49,51 @@ $(() => {
 		})
 	}
 
+
+
+	const servicesSliders = [],
+	services = document.querySelectorAll('.services .swiper')
+    services.forEach(function(el, i) {
+        el.classList.add('services_s' + i)
+        let options = {
+            loop: true,
+            speed: 500,
+            watchSlidesProgress: true,
+            slideActiveClass: 'active',
+            slideVisibleClass: 'visible',
+            preloadImages: false,
+            lazy: true,
+            breakpoints: {
+                0: {
+                    spaceBetween: 20,
+                    slidesPerView: 1
+                },
+                610: {
+                    spaceBetween: 20,
+                    slidesPerView: 1
+                },
+                768: {
+                    spaceBetween: 20,
+                    slidesPerView: 2
+                },
+                1023: {
+                    spaceBetween: 20,
+                    slidesPerView: 3.3
+                }
+            },
+            pagination: {
+                el: '.services .swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.services .swiper-button-next',
+                prevEl: '.services .swiper-button-prev'
+            }
+        }
+        servicesSliders.push(new Swiper('.services_s' + i, options))
+    })
+
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight

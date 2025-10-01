@@ -105,7 +105,7 @@ input[type=number] {
     Global styles
 -------------------*/
 :root {
-    --bg: #191C26;
+    --bg: #2B2B2B;
     --scroll_width: 17px;
     --text_color: #fff;
     --font_size: 18px;
@@ -149,27 +149,7 @@ html {
     min-height: fill-available;
 }
 
-/*
-html.custom_scroll ::-webkit-scrollbar
-{
-    width: 10px;
-    height: 10px;
 
-    background-color: #ccc;
-}
-
-html.custom_scroll ::-webkit-scrollbar-thumb
-{
-    background-color: #de041d;
-}
-
-html.custom_scroll
-{
-    scrollbar-color: #de041d #ccc;
-    scrollbar-width: thin;
-}
-
-*/
 body {
     color: var(--text_color);
     font-family: var(--font_family);
@@ -543,8 +523,9 @@ h2 span {
 }
 
 
-
-
+.services {
+    background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
+}
 .services .cont {
     position: relative;
 }
@@ -644,7 +625,9 @@ h2 span {
 
 
 
-
+.work {
+    background: #000;
+}
 .work_item {
     padding: 30px;
     background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
@@ -708,7 +691,9 @@ h2 span {
 
 
 
-
+.technology {
+    background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
+}
 .technology_items {
     display: flex;
     flex-wrap: wrap;
@@ -770,6 +755,70 @@ h2 span {
     left: 0;
     background: url(../images/marker.svg);
 }
+
+
+
+
+.center {
+    text-align: center;
+}
+.certificate {
+    background: #000;
+}
+.certificate_items {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    flex-wrap: wrap;
+    columns: 2;
+}
+.certificate_items > * {
+    background: linear-gradient(110.03deg, #151515 0%, #000000 96.82%);
+    border: 1px solid #2B2B2B;
+    border-radius: 40px;
+    padding: 25px 25px 35px 25px;
+}
+.certificate_item-info {
+    text-decoration: none;
+    display: block;
+}
+.certificate_item-img {
+    width: 214px;
+    height: 307px;
+}
+.certificate_item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.certificate_item-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 21px 0;
+}
+.certificate_item-btn {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 24px;
+    background: #EF1B1A;
+    border-radius: 12px;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;  
+    width: 100%;  
+}
+
+
 
 
 

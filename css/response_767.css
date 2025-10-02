@@ -152,6 +152,17 @@
             top: -40px;
             right: 7px;
         }
+        .header_wrap .btn {
+            display: none;
+        }
+        .header_logo {
+            width: 67px;
+            height: auto;
+            margin-top: 0;
+        }
+        .menu_open header .close_btn {
+            top: 28px;
+        }
 
 
 

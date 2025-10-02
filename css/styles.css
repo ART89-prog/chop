@@ -496,7 +496,7 @@ h2 span {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #FFFFFF;
     margin-bottom: 30px;
 }
@@ -564,6 +564,13 @@ h2 span {
     width: calc(100% + 60px);
     height: 1px;
 }
+.services_title {
+    width: calc(100% - 120px);
+}
+.services .block_subtitle {
+    width: calc(100% - 120px);
+}
+
 
 .services_item-title {
     font-family: 'Inter';
@@ -688,7 +695,8 @@ h2 span {
     font-family: 'Inter';
     font-weight: 900;
     font-size: 18px;
-    color: #EF1B1A;   
+    color: #EF1B1A; 
+    white-space: nowrap;  
 }
 .work_item-text {
     font-family: 'Inter';

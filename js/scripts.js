@@ -17,9 +17,9 @@ $(() => {
                     spaceBetween: 20,
                     slidesPerView: 1.3
                 },
-                610: {
+                680: {
                     spaceBetween: 20,
-                    slidesPerView: 1.3
+                    slidesPerView: 2.3
                 },
                 768: {
                     spaceBetween: 20,
@@ -29,11 +29,6 @@ $(() => {
                     spaceBetween: 20,
                     slidesPerView: 2.5
                 }
-            },
-            pagination: {
-                el: '.services .swiper-pagination',
-                type: 'bullets',
-                clickable: true,
             },
             navigation: {
                 nextEl: '.services .swiper-button-next',

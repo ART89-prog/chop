@@ -77,5 +77,57 @@
     .block {
         padding: 50px 0;
     }
-    
+
+    .header_title {
+        font-size: 56px;
+    }
+    .header_text {
+        font-size: 20px;
+    }
+    .about_info {
+        margin-left: 0;
+    }
+    .work_item-labels {
+        flex-wrap: wrap;
+    }
+    .work_item-labels > * {
+        width: calc(100%/2 - 6px);
+    }
+    .map_wrap {
+        width: 300px;
+        height: 477px;
+    }
+    .map_items {
+        width: calc(100% - 327px);
+        padding: 25px;
+    }
+    .callback form {
+        padding: 25px 20px;
+        width: 350px;
+        flex-shrink: 0;
+    }
+    .callback form .line {
+        flex-direction: column;
+    }
+    .callback_wrap {
+        gap: 20px;
+    }
+    .callback_info {
+        width: calc(100% - 370px);
+    }
+    .callback form button {
+        width: 100%;
+    }
+    .callback form .line .field input {
+        width: 100%;
+    }
+    .about {
+        background: linear-gradient(104.87deg, #000000 41.74%, rgba(0, 0, 0, 0.3) 95.02%), url(../images/about_bg.png);
+        background-size: cover;
+    }
+
+
+
+
+
 }
